@@ -68,8 +68,7 @@ flowchart TD
 
 ### 1. **Veri Yükleme (Toplama & Okuma)**
 - **Amaç:** Ham metin verisini elde etmek ve uygun formata getirmek.
-- **Flashcard:**  
-  **Soru:** Veri yükleme neden kritik?  
+- **Soru:** Veri yükleme neden kritik?  
   **Cevap:** Kaliteli ve doğru formatta veri, tüm sürecin temelidir.
 
 ---
@@ -87,16 +86,14 @@ flowchart TD
   print(temiz)
   # çıktı: Merhaba NLP yılında Python ile çalışıyoruz
   ```
-- **Flashcard:**  
-  **Soru:** Temizleme neden gereklidir?  
+- **Soru:** Temizleme neden gereklidir?  
   **Cevap:** Gürültüyü azaltır, modelin anlamlı veriyle çalışmasını sağlar.
 
 ---
 
 ### 3. **Dil Tespiti (Language Detection)**
 - **Amaç:** Çok dilli veri setlerinde doğru dilde işlem yapmak.
-- **Flashcard:**  
-  **Soru:** Dil tespiti neden kritik?  
+- **Soru:** Dil tespiti neden kritik?  
   **Cevap:** Yanlış dilde yapılan işlemler model başarısını düşürür.
 
 ---
@@ -115,8 +112,7 @@ flowchart TD
   print(duzeltilmis)
   # çıktı: merhaba nlp yılında python ile çalışıyoruz
   ```
-- **Flashcard:**  
-  **Soru:** Normalizasyonun faydası nedir?  
+- **Soru:** Normalizasyonun faydası nedir?  
   **Cevap:** Tutarlılık sağlar, farklı yazılmış aynı kelimeleri birleştirir.
 
 ---
@@ -131,8 +127,7 @@ flowchart TD
   print(tokenler)
   # çıktı: ['merhaba', 'nlp', 'yılında', 'python', 'ile', 'çalışıyoruz']
   ```
-- **Flashcard:**  
-  **Soru:** Tokenizasyon nedir?  
+- **Soru:** Tokenizasyon nedir?  
   **Cevap:** Metni anlamlı parçalara ayırma işlemidir.
 
 ---
@@ -148,9 +143,8 @@ flowchart TD
   print(filtreli)
   # çıktı: ['merhaba', 'nlp', 'yılında', 'python', 'çalışıyoruz']
   ```
-- **Flashcard:**  
-  **Soru:** Stopword kaldırmanın faydası nedir?  
-  **Cevap:** Modelin gereksiz kelimelerle uğraşmasını önler.
+- **Soru:** Metin ön işleme sürecinde stopword (gereksiz kelime) kaldırmanın model başarısına etkisi nedir ve neden gereklidir?  
+  **Cevap:** Stopword kaldırma işlemi, metin içerisindeki "ve", "ile", "bu" gibi anlam taşımayan, cümle yapısı için gerekli fakat modelin öğrenmesi açısından katkı sağlamayan kelimeleri temizler. Bu sayede model, asıl anlamı taşıyan kelimelere odaklanır ve gereksiz bilgiyle uğraşmaz. Özellikle Türkçe gibi eklemeli dillerde, stopword'lerin çıkarılması modelin daha hızlı ve doğru öğrenmesini sağlar, eğitim süresini kısaltır ve sonuçların doğruluğunu artırır.
 
 ---
 
@@ -165,24 +159,21 @@ flowchart TD
   print(kokler)
   # çıktı: ['merhab', 'nlp', 'yıl', 'python', 'çalış']
   ```
-- **Flashcard:**  
-  **Soru:** Lemmatizasyon ile stemming farkı nedir?  
+- **Soru:** Lemmatizasyon ile stemming farkı nedir?  
   **Cevap:** Lemmatizasyon, kelimenin sözlükteki kökünü bulur; stemming ise basitçe gövdeye indirger.
 
 ---
 
 ### 8. **NER için Hazırlık (Varlık Temizliği)**
 - **Amaç:** Kişi, yer, organizasyon gibi varlıkların doğru tespiti için metni sadeleştirmek.
-- **Flashcard:**  
-  **Soru:** NER öncesi ön işleme neden önemli?  
+- **Soru:** NER öncesi ön işleme neden önemli?  
   **Cevap:** Gürültülü veri, NER doğruluğunu azaltır.
 
 ---
 
 ### 9. **Kalite Kontrol & Doğrulama**
 - **Amaç:** Tüm adımlar sonrası verinin tutarlılığını kontrol etmek.
-- **Flashcard:**  
-  **Soru:** Kalite kontrol neden kritik?  
+- **Soru:** Kalite kontrol neden kritik?  
   **Cevap:** Hatalı ön işleme, model başarısını düşürür.
 
 ---
@@ -198,11 +189,11 @@ flowchart TD
 
 ## 📂 Klasör İçeriği
 
-- `temizleme.py` : Temel metin temizleme fonksiyonları
-- `tokenizasyon.py` : Tokenizasyon örnekleri
-- `stopword.py` : Stopword kaldırma uygulamaları
-- `kok_bulma.py` : Stemming ve lemmatization örnekleri
-- `ornek_veri/` : Örnek metin dosyaları
+- `01.metin-on-isleme/temizleme.py` : Temel metin temizleme fonksiyonları
+- `01.metin-on-isleme/tokenizasyon.py` : Tokenizasyon örnekleri
+- `01.metin-on-isleme/stopword.py` : Stopword kaldırma uygulamaları
+- `01.metin-on-isleme/kok_bulma.py` : Stemming ve lemmatization örnekleri
+- `01.metin-on-isleme/ornek_veri/` : Örnek metin dosyaları
 
 ---
 
