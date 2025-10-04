@@ -1,13 +1,11 @@
 # 01. Metin Ön İşleme (Text Preprocessing)
 
-<!-- SİSTEM MİMARİSİ & YOLCULUK -->
 ## 🚦 Metin Ön İşleme Yolculuğu
 
 <p align="center">
-  <b>Ham veriden temiz, anlamlı ve modellemeye hazır metne giden profesyonel yolculuk!</b>
+  <b>Ham YouTube yorumlarından temiz, anlamlı ve modellemeye hazır metne giden profesyonel yolculuk!</b>
 </p>
 
-<!-- Daha kare ve dengeli bir mermaid diyagramı -->
 ```mermaid
 flowchart TD
     style A1 fill:#D6EAF8,stroke:#2980B9,stroke-width:2px
@@ -22,26 +20,18 @@ flowchart TD
     style B9 fill:#F9E79F,stroke:#B7950B,stroke-width:2px
     style Z1 fill:#D5DBDB,stroke:#34495E,stroke-width:2px
 
-    %% Satır 1
     A1([Ham Veri])
     B1([Veri Yükleme<br><i>Toplama & Okuma</i>])
     B2([Temizleme<br><i>Karakter, Boşluk, HTML</i>])
-
-    %% Satır 2
     B3([Dil Tespiti<br><i>Language Detection</i>])
     B4([Normalizasyon<br><i>Küçük Harf, Yazım Düzeltme</i>])
     B5([Tokenizasyon<br><i>Cümle/Kelime Bölme</i>])
-
-    %% Satır 3
     B6([Stopword Kaldırma<br><i>Gereksiz Kelimeler</i>])
     B7([Kök/Gövdeleme<br><i>Stemming/Lemmatization</i>])
     B8([NER için Hazırlık<br><i>Varlık Temizliği</i>])
-
-    %% Son
     B9([Kalite Kontrol<br><i>Doğrulama & Son Kontrol</i>])
     Z1([Modellemeye Hazır Metin])
 
-    %% Bağlantılar
     A1 --> B1
     B1 --> B2
     B2 --> B3
@@ -53,7 +43,6 @@ flowchart TD
     B8 --> B9
     B9 --> Z1
 
-    %% Yatay bağlantılar (kare görünüm için)
     B1 -.-> B4
     B4 -.-> B7
     B2 -.-> B5
@@ -64,13 +53,29 @@ flowchart TD
 
 ---
 
+## 📊 Proje Özeti
+
+Bu klasörde, **MR Beast'in en çok izlenen YouTube videosuna ait 100.000+ yorum** üzerinde profesyonel metin ön işleme süreci adım adım uygulanmaktadır.  
+Çalışmalar, gerçek sosyal medya verisiyle, endüstri standardı Python kütüphaneleri (pandas, nltk, spacy, vb.) ve modern veri bilimi teknikleriyle yapılmıştır.
+
+### Ana Adımlar:
+- Veri setinin yüklenmesi ve incelenmesi
+- Eksik ve tekrarlı verilerin temizlenmesi
+- Metinlerin küçük harfe dönüştürülmesi
+- Noktalama ve özel karakter temizliği
+- Stopword temizliği
+- Lemmatizasyon ve stemming
+- Sonuçların karşılaştırılması
+
+---
+
 ## 🌟 Metin Ön İşleme Aşamaları & Flashcardlar
 
 ### 1. **Veri Yükleme (Toplama & Okuma)**
-- **Amaç:** Ham metin verisini elde etmek ve uygun formata getirmek.
+- **Amaç:** Ham YouTube yorumlarını uygun formata getirmek.
 - <div style="border:1px solid #2980B9; border-radius:8px; padding:12px; background:#F4F8FB; margin:10px 0;">
   <b>Soru:</b> Veri yükleme neden kritik bir adımdır ve sürecin başarısına nasıl etki eder?<br>
-  <b>Cevap:</b> Veri yükleme, doğal dil işleme projelerinin temelini oluşturur. Ham verinin doğru ve eksiksiz bir şekilde toplanması, sonraki tüm işlemlerin sağlıklı ilerlemesi için gereklidir. Eksik, hatalı veya yanlış formatta yüklenen veriler, modelin öğrenme sürecini olumsuz etkiler ve yanlış sonuçlara yol açabilir. Bu nedenle, veri yükleme aşamasında verinin kalitesi, bütünlüğü ve uygun formatta olması, projenin genel başarısı için kritik öneme sahiptir.
+  <b>Cevap:</b> Veri yükleme, projenin temelini oluşturur. Ham verinin doğru ve eksiksiz toplanması, sonraki tüm işlemlerin sağlıklı ilerlemesi için gereklidir.
   </div>
 
 ---
@@ -83,14 +88,14 @@ flowchart TD
   import re
   metin = "<p>Merhaba NLP! 2024 yılında, Python ile çalışıyoruz...</p>"
   temiz = re.sub(r'<.*?>', '', metin)  # HTML etiketlerini kaldır
-  temiz = re.sub(r'[^a-zA-ZçğıöşüÇĞİÖŞÜ\s]', '', metin)  # özel karakterleri kaldır
+  temiz = re.sub(r'[^a-zA-ZçğıöşüÇĞİÖŞÜ\s]', '', temiz)  # özel karakterleri kaldır
   temiz = temiz.strip()
   print(temiz)
   # çıktı: Merhaba NLP yılında Python ile çalışıyoruz
   ```
 - <div style="border:1px solid #229954; border-radius:8px; padding:12px; background:#F4FBF4; margin:10px 0;">
   <b>Soru:</b> Temizleme adımı neden gereklidir ve model performansına nasıl katkı sağlar?<br>
-  <b>Cevap:</b> Temizleme işlemi, metindeki gereksiz karakterleri, sayıları, HTML etiketlerini ve fazla boşlukları ortadan kaldırarak verinin daha anlamlı ve işlenebilir hale gelmesini sağlar. Gürültülü veriler, modelin yanlış öğrenmesine ve düşük doğrulukta sonuçlar üretmesine sebep olur. Temiz bir veri seti, modelin gerçek anlamı yakalamasına ve daha güvenilir sonuçlar üretmesine yardımcı olur. Bu nedenle, temizleme adımı model başarısı için vazgeçilmezdir.
+  <b>Cevap:</b> Temizleme işlemi, metindeki gereksiz karakterleri ve gürültüyü ortadan kaldırarak verinin daha anlamlı ve işlenebilir hale gelmesini sağlar.
   </div>
 
 ---
@@ -99,7 +104,7 @@ flowchart TD
 - **Amaç:** Çok dilli veri setlerinde doğru dilde işlem yapmak.
 - <div style="border:1px solid #C0392B; border-radius:8px; padding:12px; background:#FDF2F0; margin:10px 0;">
   <b>Soru:</b> Dil tespiti neden kritik bir adımdır ve yanlış dilde işlem yapılırsa ne gibi sorunlar ortaya çıkar?<br>
-  <b>Cevap:</b> Dil tespiti, özellikle çok dilli veri setlerinde, her metnin hangi dilde olduğunu belirleyerek uygun ön işleme ve analiz adımlarının seçilmesini sağlar. Yanlış dilde yapılan işlemler, örneğin İngilizce stopword listesinin Türkçe bir metne uygulanması, anlam kaybına ve model başarısının ciddi şekilde düşmesine yol açar. Doğru dil tespiti, modelin her metni kendi diline uygun şekilde işlemesini ve daha doğru sonuçlar üretmesini sağlar.
+  <b>Cevap:</b> Yanlış dilde yapılan işlemler, anlam kaybına ve model başarısının ciddi şekilde düşmesine yol açar. Doğru dil tespiti, uygun ön işleme ve analiz için gereklidir.
   </div>
 
 ---
@@ -120,7 +125,7 @@ flowchart TD
   ```
 - <div style="border:1px solid #8E44AD; border-radius:8px; padding:12px; background:#F7F1FA; margin:10px 0;">
   <b>Soru:</b> Normalizasyonun metin işleme sürecindeki rolü nedir ve neden gereklidir?<br>
-  <b>Cevap:</b> Normalizasyon, metindeki tüm harfleri küçük harfe çevirerek ve yazım hatalarını düzelterek, aynı anlama gelen fakat farklı yazılmış kelimelerin tek bir biçimde temsil edilmesini sağlar. Bu, modelin kelimeleri daha tutarlı şekilde işlemesine ve gereksiz çeşitliliğin önüne geçmesine yardımcı olur. Ayrıca, yazım hatalarının düzeltilmesi, modelin yanlış kelimelerden etkilenmesini engeller ve genel doğruluğu artırır.
+  <b>Cevap:</b> Normalizasyon, aynı anlama gelen fakat farklı yazılmış kelimelerin tek bir biçimde temsil edilmesini sağlar. Modelin kelimeleri daha tutarlı işlemesine yardımcı olur.
   </div>
 
 ---
@@ -137,7 +142,7 @@ flowchart TD
   ```
 - <div style="border:1px solid #2471A3; border-radius:8px; padding:12px; background:#F4F8FB; margin:10px 0;">
   <b>Soru:</b> Tokenizasyon nedir ve metin madenciliğinde neden önemli bir adımdır?<br>
-  <b>Cevap:</b> Tokenizasyon, metni cümle veya kelime gibi daha küçük ve anlamlı parçalara ayırma işlemidir. Bu adım, metnin bilgisayar tarafından işlenebilir hale gelmesini sağlar. Tokenler sayesinde, model her bir kelimeyi veya cümleyi ayrı birer analiz birimi olarak ele alabilir. Bu, metindeki anlamın daha iyi yakalanmasına ve daha hassas analizlerin yapılmasına olanak tanır.
+  <b>Cevap:</b> Tokenizasyon, metni cümle veya kelime gibi daha küçük ve anlamlı parçalara ayırma işlemidir. Modelin kelimeleri analiz edebilmesi için gereklidir.
   </div>
 
 ---
@@ -154,8 +159,8 @@ flowchart TD
   # çıktı: ['merhaba', 'nlp', 'yılında', 'python', 'çalışıyoruz']
   ```
 - <div style="border:1px solid #CA6F1E; border-radius:8px; padding:12px; background:#FDF6ED; margin:10px 0;">
-  <b>Soru:</b> Metin ön işleme sürecinde stopword (gereksiz kelime) kaldırmanın model başarısına etkisi nedir ve neden gereklidir?<br>
-  <b>Cevap:</b> Stopword kaldırma işlemi, metin içerisindeki "ve", "ile", "bu" gibi anlam taşımayan, cümle yapısı için gerekli fakat modelin öğrenmesi açısından katkı sağlamayan kelimeleri temizler. Bu sayede model, asıl anlamı taşıyan kelimelere odaklanır ve gereksiz bilgiyle uğraşmaz. Özellikle Türkçe gibi eklemeli dillerde, stopword'lerin çıkarılması modelin daha hızlı ve doğru öğrenmesini sağlar, eğitim süresini kısaltır ve sonuçların doğruluğunu artırır. Ayrıca, gereksiz kelimelerin çıkarılması modelin karmaşıklığını azaltır ve daha verimli çalışmasını sağlar.
+  <b>Soru:</b> Stopword kaldırmanın model başarısına etkisi nedir ve neden gereklidir?<br>
+  <b>Cevap:</b> Stopword'lerin çıkarılması, modelin asıl anlamı taşıyan kelimelere odaklanmasını sağlar ve gereksiz bilgiyle uğraşmasını engeller.
   </div>
 
 ---
@@ -173,7 +178,7 @@ flowchart TD
   ```
 - <div style="border:1px solid #CA6F1E; border-radius:8px; padding:12px; background:#FDF6ED; margin:10px 0;">
   <b>Soru:</b> Lemmatizasyon ile stemming arasındaki temel farklar nelerdir ve model başarısına etkileri nasıldır?<br>
-  <b>Cevap:</b> Stemming, kelimeleri basit kurallarla kök/gövde haline indirgerken, lemmatizasyon ise kelimenin sözlükteki gerçek kökünü bulmaya çalışır. Stemming hızlıdır ancak bazen anlamsız kökler üretebilir. Lemmatizasyon ise daha doğru ve anlamlı kökler sunar fakat daha fazla işlem gücü gerektirir. Doğru köklerin bulunması, modelin kelimeler arasındaki ilişkileri daha iyi anlamasını sağlar ve genel doğruluğu artırır. Özellikle Türkçe gibi zengin eklemeli dillerde lemmatizasyonun önemi büyüktür.
+  <b>Cevap:</b> Stemming hızlıdır ancak bazen anlamsız kökler üretebilir. Lemmatizasyon ise daha doğru ve anlamlı kökler sunar. Doğru köklerin bulunması, modelin kelimeler arasındaki ilişkileri daha iyi anlamasını sağlar.
   </div>
 
 ---
@@ -181,8 +186,8 @@ flowchart TD
 ### 8. **NER için Hazırlık (Varlık Temizliği)**
 - **Amaç:** Kişi, yer, organizasyon gibi varlıkların doğru tespiti için metni sadeleştirmek.
 - <div style="border:1px solid #148F77; border-radius:8px; padding:12px; background:#F0FBF7; margin:10px 0;">
-  <b>Soru:</b> NER (Adlandırılmış Varlık Tanıma) öncesi ön işleme neden önemlidir ve hangi hataları önler?<br>
-  <b>Cevap:</b> NER öncesi yapılan ön işleme, metindeki gürültüyü ve gereksiz bilgileri temizleyerek kişi, yer, organizasyon gibi varlıkların daha doğru tespit edilmesini sağlar. Gürültülü veya hatalı veriler, NER algoritmalarının yanlış varlıkları tanımasına veya önemli varlıkları atlamasına neden olabilir. Temiz ve sadeleştirilmiş bir metin, NER doğruluğunu artırır ve modelin gerçek dünyadaki varlıkları daha iyi tanımasını sağlar.
+  <b>Soru:</b> NER öncesi ön işleme neden önemlidir ve hangi hataları önler?<br>
+  <b>Cevap:</b> NER öncesi yapılan ön işleme, metindeki gürültüyü ve gereksiz bilgileri temizleyerek varlıkların daha doğru tespit edilmesini sağlar.
   </div>
 
 ---
@@ -191,27 +196,20 @@ flowchart TD
 - **Amaç:** Tüm adımlar sonrası verinin tutarlılığını kontrol etmek.
 - <div style="border:1px solid #34495E; border-radius:8px; padding:12px; background:#F4F6F7; margin:10px 0;">
   <b>Soru:</b> Kalite kontrol ve doğrulama adımı neden kritik öneme sahiptir ve hangi riskleri azaltır?<br>
-  <b>Cevap:</b> Kalite kontrol, ön işleme adımlarının doğru ve eksiksiz uygulandığından emin olmak için gereklidir. Hatalı veya eksik ön işleme, modelin yanlış öğrenmesine, düşük doğrulukta sonuçlar üretmesine ve güvenilirliğin azalmasına yol açar. Kalite kontrol ile veri kaybı, yanlış dönüşümler ve tutarsızlıklar tespit edilip düzeltilir. Bu sayede modelin eğitimi ve test aşamalarında beklenmedik hataların önüne geçilmiş olur.
+  <b>Cevap:</b> Kalite kontrol ile veri kaybı, yanlış dönüşümler ve tutarsızlıklar tespit edilip düzeltilir. Modelin eğitimi ve test aşamalarında beklenmedik hataların önüne geçilmiş olur.
   </div>
-
----
-
-## 🎯 En İyi Uygulamalar & İpuçları
-
-- **Pipeline oluşturun:** Tüm adımları otomatikleştirin.
-- **Dil bağımlılıklarını unutmayın:** Türkçe için özel karakter ve ekler kritik.
-- **Veri kaybına dikkat:** Gereksiz bilgi silmeyin.
-- **Her adımda kalite kontrolü yapın.**
 
 ---
 
 ## 📂 Klasör İçeriği
 
-- `01.metin-on-isleme/temizleme.py` : Temel metin temizleme fonksiyonları
-- `01.metin-on-isleme/tokenizasyon.py` : Tokenizasyon örnekleri
-- `01.metin-on-isleme/stopword.py` : Stopword kaldırma uygulamaları
-- `01.metin-on-isleme/kok_bulma.py` : Stemming ve lemmatization örnekleri
-- `01.metin-on-isleme/ornek_veri/` : Örnek metin dosyaları
+- `mrbeast_yorum_onisleme.ipynb` : MR Beast YouTube yorumları üzerinde adım adım metin ön işleme uygulaması (ana notebook)
+- `temizleme.py` : Temel metin temizleme fonksiyonları
+- `tokenizasyon.py` : Tokenizasyon örnekleri
+- `stopword.py` : Stopword kaldırma uygulamaları
+- `kok_bulma.py` : Stemming ve lemmatization örnekleri
+- `ornek_veri/` : Örnek metin dosyaları
+- `mr-beast-most-viewed-yt-video-100k-comments.csv` : MR Beast YouTube yorum veri seti
 
 ---
 

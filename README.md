@@ -112,60 +112,242 @@ flowchart TB
 
 ## 📅 Haftalık Yol Haritası
 
-| Hafta | Modül | İçerik |
-|:-:|:---|:---|
-| 1 | **01.metin-on-isleme** | Metin temizleme, tokenizasyon, stopword çıkarımı, kök bulma, lemmatizasyon, Türkçe morfoloji |
-| 2 | **02.metin-temsili** | Bag-of-Words, N-gram, TF-IDF, Word Embedding |
-| 3 | **03.olasiliksal-dil-modelleri** | N-gram modelleri, HMM, MaxEnt |
-| 4 | **04.derin-ogrenme-dil-modelleri** | RNN, LSTM, Transformer tabanlı modeller |
-| 5 | **05.temel-nlp-gorevleri** | Duygu analizi, sınıflandırma, NER, POS |
-| 6 | **06.gelismis-nlp-gorevleri** | Chatbot, QA, özetleme, çeviri |
+<table align="center">
+<tr>
+<th width="80">Hafta</th>
+<th width="250">Modül</th>
+<th width="350">Ana Konular</th>
+<th width="200">Jupyter Notebook'lar</th>
+<th width="120">Durum</th>
+</tr>
+<tr>
+<td align="center"><b>1</b></td>
+<td><b>📝 01.metin-on-isleme</b><br/><i>Metin Ön İşleme</i></td>
+<td>• Veri temizleme ve normalizasyon<br/>• Tokenizasyon (kelime/cümle bölme)<br/>• Stopword kaldırma<br/>• Stemming & Lemmatization<br/>• YouTube yorumları ile gerçek uygulama</td>
+<td>• 01-stemming-and-lemmatization.ipynb<br/>• 02-stop-words.ipynb<br/>• 03-tokenization.ipynb<br/>• 04-veri_temizleme.ipynb<br/>• mrbeast_yorum_onisleme.ipynb</td>
+<td align="center">✅ <b>Aktif</b></td>
+</tr>
+<tr>
+<td align="center"><b>2</b></td>
+<td><b>🔤 02.metin-temsili</b><br/><i>Metin Temsili</i></td>
+<td>• Bag-of-Words modeli<br/>• N-gram analizi<br/>• TF-IDF hesaplaması<br/>• Word2Vec & GloVe<br/>• Vektör uzayında işlemler</td>
+<td><i>Gelecek hafta eklenecek...</i></td>
+<td align="center">🔄 <b>Hazırlanıyor</b></td>
+</tr>
+<tr>
+<td align="center"><b>3</b></td>
+<td><b>📊 03.olasiliksal-modeller</b><br/><i>Olasılıksal Dil Modelleri</i></td>
+<td>• N-gram dil modelleri<br/>• Hidden Markov Model (HMM)<br/>• Maximum Entropy modelleri<br/>• Dil modeli değerlendirme</td>
+<td><i>3. hafta içeriği...</i></td>
+<td align="center">⏳ <b>Bekliyor</b></td>
+</tr>
+<tr>
+<td align="center"><b>4</b></td>
+<td><b>🧠 04.derin-ogrenme</b><br/><i>Derin Öğrenme & NLP</i></td>
+<td>• Recurrent Neural Networks (RNN)<br/>• LSTM & GRU modelleri<br/>• Transformer mimarisi<br/>• BERT ve GPT modelleri</td>
+<td><i>4. hafta içeriği...</i></td>
+<td align="center">⏳ <b>Bekliyor</b></td>
+</tr>
+<tr>
+<td align="center"><b>5</b></td>
+<td><b>🎯 05.temel-nlp-gorevleri</b><br/><i>Temel NLP Görevleri</i></td>
+<td>• Duygu analizi (Sentiment Analysis)<br/>• Metin sınıflandırma<br/>• Named Entity Recognition (NER)<br/>• Part-of-Speech (POS) etiketleme</td>
+<td><i>5. hafta içeriği...</i></td>
+<td align="center">⏳ <b>Bekliyor</b></td>
+</tr>
+<tr>
+<td align="center"><b>6</b></td>
+<td><b>🚀 06.gelismis-nlp</b><br/><i>Gelişmiş NLP Uygulamaları</i></td>
+<td>• Chatbot geliştirme<br/>• Soru-Cevap sistemleri<br/>• Otomatik özetleme<br/>• Makine çevirisi<br/>• Son teknoloji modeller</td>
+<td><i>6. hafta içeriği...</i></td>
+<td align="center">⏳ <b>Bekliyor</b></td>
+</tr>
+</table>
 
-> **Not:** Her hafta yeni bir klasör ve içerik eklenecek. Takipte kal!
+> **🔥 Güncel Durum:** 1. hafta tamamlandı! Her hafta yeni modüller ve interaktif içerikler ekleniyor. Takipte kal!
 
 ---
 
 ## 📚 01.metin-on-isleme Modülü
 
-- **Tokenizasyon:** Metni kelime/cümlelere böl
-- **Stopword Çıkarımı:** Anlamsız kelimeleri temizle
-- **Kök/Lemma:** Kelimeleri köklerine indir
-- **Türkçe Morfoloji:** Türkçe'ye özel işlemler
+<p align="center">
+  <img src="https://img.icons8.com/color/64/document.png" width="48"/>
+  <b>Ham YouTube yorumlarından temiz, anlamlı metne dönüşüm süreci</b>
+</p>
 
-| Dosya | Açıklama |
-|:---|:---|
-| `01_veri_temizleme.py` | Temel metin temizleme fonksiyonları |
-| `02_tokenizasyon.py` | Tokenizasyon örnekleri |
-| `03_stop_words.py` | Stopword çıkarımı uygulamaları |
-| `04_kok_lemmatizasyon.py` | Kök bulma ve lemmatizasyon örnekleri |
+### 🎯 Modül İçeriği
+
+<table align="center">
+<tr>
+<th width="300">📄 Jupyter Notebook</th>
+<th width="400">🎯 Konular & Uygulamalar</th>
+<th width="150">📊 Seviye</th>
+</tr>
+<tr>
+<td><b>04-veri_temizleme.ipynb</b><br/><i>Veri Temizleme ve Normalizasyon</i></td>
+<td>• HTML etiketleri kaldırma<br/>• Özel karakterler ve noktalama<br/>• Küçük harf dönüşümü<br/>• Gereksiz boşluklar</td>
+<td align="center">🟢 <b>Temel</b></td>
+</tr>
+<tr>
+<td><b>03-tokenization.ipynb</b><br/><i>Tokenizasyon İşlemleri</i></td>
+<td>• Cümle segmentasyonu<br/>• Kelime tokenizasyonu<br/>• spaCy ve NLTK kullanımı<br/>• Türkçe tokenizasyon</td>
+<td align="center">🟡 <b>Orta</b></td>
+</tr>
+<tr>
+<td><b>02-stop-words.ipynb</b><br/><i>Stopword Kaldırma</i></td>
+<td>• Türkçe stopword listeleri<br/>• Özel stopword tanımlama<br/>• Frekans analizi<br/>• Before/After karşılaştırma</td>
+<td align="center">🟢 <b>Temel</b></td>
+</tr>
+<tr>
+<td><b>01-stemming-and-lemmatization.ipynb</b><br/><i>Kök Bulma ve Lemmatizasyon</i></td>
+<td>• Stemming algoritmaları<br/>• Lemmatization işlemleri<br/>• Türkçe morfolojik analiz<br/>• Performans karşılaştırma</td>
+<td align="center">🔴 <b>İleri</b></td>
+</tr>
+<tr style="background-color:#f0f8ff;">
+<td><b>🎬 mrbeast_yorum_onisleme.ipynb</b><br/><i>Gerçek Veri Uygulaması</i></td>
+<td>• 100K YouTube yorumu analizi<br/>• End-to-end preprocessing pipeline<br/>• Veri görselleştirme<br/>• Production-ready kod</td>
+<td align="center">🚀 <b>Proje</b></td>
+</tr>
+</table>
+
+### 📈 Öğrenme Yolculuğu
+
+```
+Ham YouTube Yorumları → Temizleme → Tokenizasyon → Stopword → Lemmatization → Modellemeye Hazır Metin
+     📝 100K Yorum        📄 HTML       🔤 Kelimeler    🚫 Gereksiz     🌱 Kökler       ✅ Temiz Veri
+```
+
+### 🛠️ Kullanılan Araçlar ve Kütüphaneler
+
+- **🐍 Python:** Ana programlama dili
+- **📊 spaCy:** Modern NLP işlemleri
+- **📚 NLTK:** Geleneksel NLP araçları  
+- **🔧 pandas:** Veri manipülasyonu
+- **📈 matplotlib/seaborn:** Veri görselleştirme
+- **🌍 langdetect:** Dil tespiti
 
 ---
 
 ## 📂 Dizin Yapısı
 
 ```bash
-nlp-pratikleri/
-├── 01.metin-on-isleme/
-│   ├── 01_veri_temizleme.py
-│   ├── 02_tokenizasyon.py
-│   ├── 03_stop_words.py
-│   └── 04_kok_lemmatizasyon.py
+nlp-bootcamp-zero-to-hero/
+├── 📁 01.metin-on-isleme/                    # 1️⃣ HAFİKA: Metin Ön İşleme
+│   ├── 📓 01-stemming-and-lemmatization.ipynb    # Kök bulma ve lemmatizasyon
+│   ├── 📓 02-stop-words.ipynb                     # Stopword kaldırma
+│   ├── 📓 03-tokenization.ipynb                   # Tokenizasyon işlemleri
+│   ├── 📓 04-veri_temizleme.ipynb                # Veri temizleme ve normalizasyon
+│   ├── 🎬 mrbeast_yorum_onisleme.ipynb           # Gerçek veri uygulaması
+│   ├── 📊 mr-beast-most-viewed-yt-video-100k-comments.csv  # YouTube yorumları veri seti
+│   ├── 🖼️ mrbeastlogo.png                        # Proje görseli
+│   └── 📖 README.md                              # Modül açıklaması
 │
-├── requirements.txt
-└── README.md
+├── 📁 02.metin-temsili/                      # 2️⃣ HAFTA: Gelecek hafta...
+│   └── 🔄 (Hazırlanıyor...)
+│
+├── 📁 03.olasiliksal-modeller/               # 3️⃣ HAFTA: Gelecek hafta...
+│   └── 🔄 (Hazırlanıyor...)
+│
+├── 📁 04.derin-ogrenme/                      # 4️⃣ HAFTA: Gelecek hafta...
+│   └── 🔄 (Hazırlanıyor...)
+│
+├── 📁 05.temel-nlp-gorevleri/                # 5️⃣ HAFTA: Gelecek hafta...
+│   └── 🔄 (Hazırlanıyor...)
+│
+├── 📁 06.gelismis-nlp/                       # 6️⃣ HAFTA: Gelecek hafta...
+│   └── 🔄 (Hazırlanıyor...)
+│
+├── 📋 requirements.txt                        # Python kütüphaneleri
+├── 📄 LICENSE                                # MIT Lisansı
+└── 📖 README.md                              # Ana proje açıklaması
 ```
+
+### 📊 Dosya İstatistikleri
+
+| Kategori | Adet | Açıklama |
+|:---|:-:|:---|
+| 📓 **Jupyter Notebook'lar** | 5 | İnteraktif eğitim materyalleri |
+| 📊 **Veri Setleri** | 1 | Gerçek YouTube yorumları (100K+) |
+| 📁 **Aktif Modüller** | 1 | Tamamlanmış eğitim modülleri |
+| 🔄 **Gelecek Modüller** | 5 | Hazırlanmakta olan içerikler |
 
 ---
 
 ## 📦 Veri Setleri
 
-- `IMDB_Dataset.csv`: Film yorumları (duygu analizi için)
-- `sms_spam.csv`: SMS spam/ham sınıflandırma
-- `amazon_reviews_tr.csv`: Amazon ürün yorumları (sınıflandırma ve duygu analizi)
-- `turkish_movie_reviews.csv`: Türkçe film yorumları (duygu analizi)
-- `turkish_news_ner.csv`: Türkçe haber metinleri (ad-öbek tanıma/NER)
-- `turkish_twitter_sentiment.csv`: Türkçe tweetler (duygu analizi)
-- `turkish_wikipedia_2023.txt`: Büyük ölçekli Türkçe Wikipedia metni (dil modeli eğitimi için)
+### 🎯 Mevcut Veri Setleri
+
+<table align="center">
+<tr>
+<th width="300">📊 Veri Seti</th>
+<th width="150">📏 Boyut</th>
+<th width="200">🎯 Kullanım Alanı</th>
+<th width="150">📍 Modül</th>
+<th width="100">🔄 Durum</th>
+</tr>
+<tr style="background-color:#f0f8ff;">
+<td><b>🎬 mr-beast-most-viewed-yt-video-100k-comments.csv</b><br/><i>MrBeast'in en çok izlenen videosunun yorumları</i></td>
+<td align="center"><b>100K+</b><br/>Yorumlar</td>
+<td>• Metin ön işleme<br/>• Duygu analizi<br/>• Veri temizleme</td>
+<td align="center"><b>01</b><br/>Hafta</td>
+<td align="center">✅ <b>Aktif</b></td>
+</tr>
+</table>
+
+### 🔮 Planlanan Veri Setleri (Gelecek Haftalarda)
+
+<table align="center">
+<tr>
+<th width="300">📊 Veri Seti</th>
+<th width="150">📏 Boyut</th>
+<th width="200">🎯 Kullanım Alanı</th>
+<th width="150">📍 Modül</th>
+</tr>
+<tr>
+<td><b>📱 turkish_twitter_sentiment.csv</b><br/><i>Türkçe Twitter duygu analizi</i></td>
+<td align="center"><b>50K+</b><br/>Tweet</td>
+<td>• Duygu analizi<br/>• Sınıflandırma<br/>• Sosyal medya NLP</td>
+<td align="center"><b>05</b><br/>Hafta</td>
+</tr>
+<tr>
+<td><b>🎬 turkish_movie_reviews.csv</b><br/><i>Türkçe film yorumları</i></td>
+<td align="center"><b>25K+</b><br/>Yorum</td>
+<td>• Duygu analizi<br/>• Binary sınıflandırma<br/>• Türkçe NLP</td>
+<td align="center"><b>05</b><br/>Hafta</td>
+</tr>
+<tr>
+<td><b>🛒 amazon_reviews_tr.csv</b><br/><i>Amazon Türkiye ürün yorumları</i></td>
+<td align="center"><b>100K+</b><br/>Yorum</td>
+<td>• Çok sınıflı duygu analizi<br/>• Ürün kategorisi tahmini<br/>• E-ticaret NLP</td>
+<td align="center"><b>05</b><br/>Hafta</td>
+</tr>
+<tr>
+<td><b>📰 turkish_news_ner.csv</b><br/><i>Türkçe haber metinleri</i></td>
+<td align="center"><b>30K+</b><br/>Haber</td>
+<td>• Named Entity Recognition<br/>• Bilgi çıkarımı<br/>• Haber analizi</td>
+<td align="center"><b>05</b><br/>Hafta</td>
+</tr>
+<tr>
+<td><b>📚 turkish_wikipedia_2023.txt</b><br/><i>Türkçe Wikipedia metinleri</i></td>
+<td align="center"><b>500MB+</b><br/>Metin</td>
+<td>• Dil modeli eğitimi<br/>• Word embeddings<br/>• Büyük veri işleme</td>
+<td align="center"><b>04</b><br/>Hafta</td>
+</tr>
+<tr>
+<td><b>📧 sms_spam_turkish.csv</b><br/><i>Türkçe SMS spam tespiti</i></td>
+<td align="center"><b>10K+</b><br/>SMS</td>
+<td>• Binary sınıflandırma<br/>• Spam tespiti<br/>• Güvenlik NLP</td>
+<td align="center"><b>05</b><br/>Hafta</td>
+</tr>
+</table>
+
+### 📈 Veri Seti Özellikleri
+
+- **🌍 Çok Dilli:** Türkçe ve İngilizce içerikler
+- **🔄 Gerçek Zamanlı:** Güncel ve gerçek veriler
+- **📊 Çeşitli Boyutlar:** 10K'dan 500MB+'a kadar
+- **🎯 Uygulamalı:** Her modülün amacına uygun seçilmiş
+- **✅ Hazır:** Ön işlenmiş ve temizlenmiş formatlar
 
 ---
 
