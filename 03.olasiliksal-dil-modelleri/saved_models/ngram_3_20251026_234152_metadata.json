@@ -1,0 +1,14 @@
+{
+  "training_sentences": 3200,
+  "corpus_source": "Reuters + Brown",
+  "preprocessing": "tokenization, lowercase, special_chars_removed",
+  "smoothing": "add_one_laplace",
+  "basic_perplexity": 5795.483002530842,
+  "cv_perplexity": 4047.9403026551568,
+  "model_type": "3-gram",
+  "vocab_size": 14630,
+  "ngram_count": 70257,
+  "total_ngrams": 80779,
+  "save_timestamp": "20251026_234152",
+  "model_file": "ngram_3_20251026_234152.pkl"
+}
