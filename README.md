@@ -77,12 +77,12 @@ flowchart TB
     style B5 fill:#D4E6F1,stroke:#2471A3,stroke-width:2px
     style B6 fill:#FDEBD0,stroke:#CA6F1E,stroke-width:2px
     A1([Başlangıç])
-    B1([1. Hafta<br><b>Metin Ön İşleme</b><br><i>Temizleme, Tokenizasyon</i>])
-    B2([2. Hafta<br><b>Metin Temsili</b><br><i>BoW, TF-IDF, Embedding</i>])
-    B3([3. Hafta<br><b>Olasılıksal Modeller</b><br><i>N-gram, HMM</i>])
-    B4([4. Hafta<br><b>Derin Öğrenme</b><br><i>RNN, LSTM, Transformer</i>])
-    B5([5. Hafta<br><b>Temel NLP Görevleri</b><br><i>Duygu Analizi, NER</i>])
-    B6([6. Hafta<br><b>Gelişmiş NLP</b><br><i>Chatbot, QA, Özetleme</i>])
+    B1([1. Hafta ✅<br><b>Metin Ön İşleme</b><br><i>Temizleme, Tokenizasyon</i>])
+    B2([2. Hafta ✅<br><b>Metin Temsili</b><br><i>BoW, TF-IDF, Embedding</i>])
+    B3([3. Hafta ✅<br><b>Olasılıksal Modeller</b><br><i>N-gram, HMM, MaxEnt</i>])
+    B4([4. Hafta 🔄<br><b>Derin Öğrenme</b><br><i>RNN, LSTM, Transformer</i>])
+    B5([5. Hafta 🔄<br><b>Temel NLP Görevleri</b><br><i>Duygu Analizi, NER</i>])
+    B6([6. Hafta 🔄<br><b>Gelişmiş NLP</b><br><i>Chatbot, QA, Özetleme</i>])
     Z1([Gerçek Dünya Uygulamaları])
 
     %% Grid bağlantıları
@@ -130,16 +130,16 @@ flowchart TB
 <tr>
 <td align="center"><b>2</b></td>
 <td><b>🔤 02.metin-temsili</b><br/><i>Metin Temsili</i></td>
-<td>• Bag-of-Words modeli<br/>• N-gram analizi<br/>• TF-IDF hesaplaması<br/>• Word2Vec & GloVe<br/>• Vektör uzayında işlemler</td>
-<td><i>Gelecek hafta eklenecek...</i></td>
-<td align="center">🔄 <b>Hazırlanıyor</b></td>
+<td>• Bag-of-Words modeli<br/>• N-gram analizi<br/>• TF-IDF hesaplaması<br/>• Word2Vec & GloVe<br/>• Transformer modelleri</td>
+<td>• 01. bow-bagofwords.ipynb<br/>• 02 .n-grams.ipynb<br/>• 03. tf_idf.ipynb<br/>• 04_word_embedding.ipynb<br/>• 05. transformers.ipynb</td>
+<td align="center">✅ <b>Tamamlandı</b></td>
 </tr>
 <tr>
 <td align="center"><b>3</b></td>
-<td><b>📊 03.olasiliksal-modeller</b><br/><i>Olasılıksal Dil Modelleri</i></td>
-<td>• N-gram dil modelleri<br/>• Hidden Markov Model (HMM)<br/>• Maximum Entropy modelleri<br/>• Dil modeli değerlendirme</td>
-<td><i>3. hafta içeriği...</i></td>
-<td align="center">⏳ <b>Bekliyor</b></td>
+<td><b>📊 03.olasiliksal-dil-modelleri</b><br/><i>Olasılıksal Dil Modelleri</i></td>
+<td>• N-gram dil modelleri<br/>• Hidden Markov Model (HMM)<br/>• Maximum Entropy modelleri<br/>• Duygu analizi & POS tagging<br/>• Hibrit NLP sistemleri</td>
+<td>• 01-olasiliksal-dil-modelleri.ipynb<br/>• case_study_1_news_classification.ipynb<br/>• case_study_2_pos_tagging.ipynb<br/>• case_study_3_language_model.ipynb<br/>• case_study_4_sentiment_analysis.ipynb<br/>• case_study_5_hybrid_system.ipynb</td>
+<td align="center">✅ <b>Tamamlandı</b></td>
 </tr>
 <tr>
 <td align="center"><b>4</b></td>
@@ -164,7 +164,7 @@ flowchart TB
 </tr>
 </table>
 
-> **🔥 Güncel Durum:** 1. hafta tamamlandı! Her hafta yeni modüller ve interaktif içerikler ekleniyor. Takipte kal!
+> **🔥 Güncel Durum:** İlk 3 hafta tamamlandı! 01. Metin Ön İşleme, 02. Metin Temsili ve 03. Olasılıksal Dil Modelleri modülleri aktif. Her hafta yeni modüller ve interaktif içerikler ekleniyor. Takipte kal!
 
 ---
 
@@ -173,9 +173,13 @@ flowchart TB
 - **🐍 Python:** Ana programlama dili
 - **📊 spaCy:** Modern NLP işlemleri
 - **📚 NLTK:** Geleneksel NLP araçları  
+- **🤗 Transformers:** Modern dil modelleri (BERT, GPT)
+- **🧮 Gensim:** Word2Vec ve topic modeling
 - **🔧 pandas:** Veri manipülasyonu
 - **📈 matplotlib/seaborn:** Veri görselleştirme
 - **🌍 langdetect:** Dil tespiti
+- **🧠 scikit-learn:** Makine öğrenmesi algoritmaları
+- **🔢 numpy:** Sayısal hesaplamalar
 
 ---
 
@@ -193,11 +197,30 @@ nlp-bootcamp-zero-to-hero/
 │   ├── 🖼️ mrbeastlogo.png                        # Proje görseli
 │   └── 📖 README.md                              # Modül açıklaması
 │
-├── 📁 02.metin-temsili/                      # 2️⃣ HAFTA: Gelecek hafta...
-│   └── 🔄 (Hazırlanıyor...)
+├── 📁 02.metin-temsili/                      # 2️⃣ HAFTA: Metin Temsili (Tamamlandı ✅)
+│   ├── 📓 01. bow-bagofwords.ipynb              # Bag-of-Words modeli
+│   ├── 📓 02 .n-grams.ipynb                     # N-gram analizi
+│   ├── � 03. tf_idf.ipynb                      # TF-IDF hesaplaması
+│   ├── 📓 04_word_embedding.ipynb               # Word2Vec ve embedding
+│   ├── 📓 05. transformers.ipynb                # Transformer modelleri
+│   ├── 📊 IMDB Dataset.csv                      # Film yorumları veri seti
+│   ├── 📊 sms_spam.csv                          # SMS spam veri seti
+│   └── 📖 README.md                             # Modül açıklaması
 │
-├── 📁 03.olasiliksal-modeller/               # 3️⃣ HAFTA: Gelecek hafta...
-│   └── 🔄 (Hazırlanıyor...)
+├── 📁 03.olasiliksal-dil-modelleri/          # 3️⃣ HAFTA: Olasılıksal Modeller (Tamamlandı ✅)
+│   ├── 📓 01-olasiliksal-dil-modelleri.ipynb   # Temel olasılıksal modeller
+│   ├── 📓 case_study_1_news_classification.ipynb  # Haber sınıflandırma
+│   ├── 📓 case_study_2_pos_tagging.ipynb       # POS etiketleme
+│   ├── 📓 case_study_3_language_model.ipynb    # Dil modelleme
+│   ├── 📓 case_study_4_sentiment_analysis.ipynb  # Duygu analizi
+│   ├── � case_study_5_hybrid_system.ipynb     # Hibrit sistem
+│   ├── 📊 hybrid_nlp_system_report_20251027_001649.txt  # Sistem raporu
+│   ├── 📁 saved_models/                        # Kaydedilmiş modeller
+│   │   ├── ngram_2_20251026_234152_metadata.json
+│   │   ├── ngram_3_20251026_234152_metadata.json
+│   │   ├── ngram_4_20251026_234152_metadata.json
+│   │   └── sentiment_analysis_metadata_20251026_234923.json
+│   └── 📖 README.md                            # Modül açıklaması
 │
 ├── 📁 04.derin-ogrenme/                      # 4️⃣ HAFTA: Gelecek hafta...
 │   └── 🔄 (Hazırlanıyor...)
@@ -217,10 +240,10 @@ nlp-bootcamp-zero-to-hero/
 
 | Kategori | Adet | Açıklama |
 |:---|:-:|:---|
-| 📓 **Jupyter Notebook'lar** | 5 | İnteraktif eğitim materyalleri |
-| 📊 **Veri Setleri** | 1 | Gerçek YouTube yorumları (100K+) |
-| 📁 **Aktif Modüller** | 1 | Tamamlanmış eğitim modülleri |
-| 🔄 **Gelecek Modüller** | 5 | Hazırlanmakta olan içerikler |
+| 📓 **Jupyter Notebook'lar** | 16 | İnteraktif eğitim materyalleri |
+| 📊 **Veri Setleri** | 4 | Gerçek dünya veri setleri |
+| 📁 **Tamamlanan Modüller** | 3 | Aktif eğitim modülleri |
+| 🔄 **Gelecek Modüller** | 3 | Hazırlanmakta olan içerikler |
 
 ---
 
@@ -243,6 +266,27 @@ nlp-bootcamp-zero-to-hero/
 <td align="center"><b>01</b><br/>Hafta</td>
 <td align="center">✅ <b>Aktif</b></td>
 </tr>
+<tr style="background-color:#f5f5f5;">
+<td><b>🎬 IMDB Dataset.csv</b><br/><i>Film yorumları ve derecelendirmeleri</i></td>
+<td align="center"><b>50K+</b><br/>İnceleme</td>
+<td>• Metin temsili<br/>• Duygu analizi<br/>• Sınıflandırma</td>
+<td align="center"><b>02</b><br/>Hafta</td>
+<td align="center">✅ <b>Aktif</b></td>
+</tr>
+<tr style="background-color:#f0f8ff;">
+<td><b>📱 sms_spam.csv</b><br/><i>SMS spam tespit veri seti</i></td>
+<td align="center"><b>5K+</b><br/>Mesaj</td>
+<td>• Text classification<br/>• Spam detection<br/>• Feature engineering</td>
+<td align="center"><b>02</b><br/>Hafta</td>
+<td align="center">✅ <b>Aktif</b></td>
+</tr>
+<tr style="background-color:#f5f5f5;">
+<td><b>📊 Reuters News & NLTK Datasets</b><br/><i>Haber korpusu ve POS etiketleme</i></td>
+<td align="center"><b>10K+</b><br/>Döküman</td>
+<td>• Haber sınıflandırma<br/>• POS tagging<br/>• Dil modelleme</td>
+<td align="center"><b>03</b><br/>Hafta</td>
+<td align="center">✅ <b>Aktif</b></td>
+</tr>
 </table>
 
 
@@ -250,11 +294,35 @@ nlp-bootcamp-zero-to-hero/
 
 ## ⚡ Kurulum & Başlangıç
 
+### 🔧 Gereksinimler
+- Python 3.8+ 
+- Jupyter Notebook/Lab
+- Git
+
+### 📦 Kurulum Adımları
+
 ```bash
+# Projeyi klonla
+git clone https://github.com/cemal-yuksel/nlp-bootcamp-zero-to-hero.git
+cd nlp-bootcamp-zero-to-hero
+
+# Virtual environment oluştur
 python -m venv venv
-venv\Scripts\activate   # (veya Mac/Linux için: source venv/bin/activate)
+venv\Scripts\activate   # Windows
+# source venv/bin/activate  # Mac/Linux
+
+# Gerekli kütüphaneleri yükle
 pip install -r requirements.txt
+
+# Jupyter Notebook'u başlat
+jupyter notebook
 ```
+
+### 🚀 Hızlı Başlangıç
+1. **01.metin-on-isleme/** klasöründen başlayın
+2. Her notebook'u sırayla çalıştırın
+3. Veri setlerini indirip ilgili klasörlere yerleştirin
+4. Hands-on öğrenmenin keyfini çıkarın!
 
 ---
 
