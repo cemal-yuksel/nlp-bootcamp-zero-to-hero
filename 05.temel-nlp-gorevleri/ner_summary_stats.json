@@ -1,0 +1,37 @@
+{
+  "total_news": 8,
+  "total_entities": 81,
+  "entity_types": {
+    "ORG": 20,
+    "PERSON": 15,
+    "DATE": 13,
+    "GPE": 11,
+    "CARDINAL": 8,
+    "MONEY": 5,
+    "NORP": 5,
+    "LOC": 2,
+    "PERCENT": 2
+  },
+  "top_entities": {
+    "Apple Inc.": 1,
+    "today": 1,
+    "Cupertino": 1,
+    "Tim Cook": 1,
+    "M3": 1,
+    "October 2024": 1,
+    "over $10 billion": 1,
+    "Microsoft": 1,
+    "Google": 1,
+    "The United Nations": 1
+  },
+  "categories": [
+    "Technology",
+    "Politics",
+    "Business",
+    "Sports",
+    "Health",
+    "Entertainment",
+    "Economy",
+    "Science"
+  ]
+}

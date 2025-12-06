@@ -1,0 +1,82 @@
+news_id,category,title,entity_text,entity_type,entity_type_desc,start_char,end_char
+1,Technology,Apple Unveils Revolutionary AI Chip,Apple Inc.,ORG,"Companies, agencies, institutions, etc.",0,10
+1,Technology,Apple Unveils Revolutionary AI Chip,today,DATE,Absolute or relative dates or periods,21,26
+1,Technology,Apple Unveils Revolutionary AI Chip,Cupertino,GPE,"Countries, cities, states",36,45
+1,Technology,Apple Unveils Revolutionary AI Chip,Tim Cook,PERSON,"People, including fictional",133,141
+1,Technology,Apple Unveils Revolutionary AI Chip,M3,GPE,"Countries, cities, states",160,162
+1,Technology,Apple Unveils Revolutionary AI Chip,October 2024,DATE,Absolute or relative dates or periods,189,201
+1,Technology,Apple Unveils Revolutionary AI Chip,over $10 billion,MONEY,"Monetary values, including unit",228,244
+1,Technology,Apple Unveils Revolutionary AI Chip,Microsoft,ORG,"Companies, agencies, institutions, etc.",274,283
+1,Technology,Apple Unveils Revolutionary AI Chip,Google,ORG,"Companies, agencies, institutions, etc.",288,294
+2,Politics,UN Summit Addresses Climate Change,The United Nations,ORG,"Companies, agencies, institutions, etc.",0,18
+2,Politics,UN Summit Addresses Climate Change,Paris,GPE,"Countries, cities, states",54,59
+2,Politics,UN Summit Addresses Climate Change,last week,DATE,Absolute or relative dates or periods,60,69
+2,Politics,UN Summit Addresses Climate Change,Emmanuel Macron,PERSON,"People, including fictional",81,96
+2,Politics,UN Summit Addresses Climate Change,France,GPE,"Countries, cities, states",100,106
+2,Politics,UN Summit Addresses Climate Change,over 150,CARDINAL,Numerals that do not fall under another type,129,137
+2,Politics,UN Summit Addresses Climate Change,The European Union,ORG,"Companies, agencies, institutions, etc.",149,167
+2,Politics,UN Summit Addresses Climate Change,€500 million,MONEY,"Monetary values, including unit",176,188
+2,Politics,UN Summit Addresses Climate Change,British,NORP,Nationalities or religious or political groups,220,227
+2,Politics,UN Summit Addresses Climate Change,Rishi Sunak,PERSON,"People, including fictional",243,254
+2,Politics,UN Summit Addresses Climate Change,German,NORP,Nationalities or religious or political groups,259,265
+2,Politics,UN Summit Addresses Climate Change,Olaf Scholz,PERSON,"People, including fictional",277,288
+3,Business,Tesla Breaks Production Records,Tesla Motors,ORG,"Companies, agencies, institutions, etc.",0,12
+3,Business,Tesla Breaks Production Records,the third quarter of 2024,DATE,Absolute or relative dates or periods,58,83
+3,Business,Tesla Breaks Production Records,Elon Musk,PERSON,"People, including fictional",127,136
+3,Business,Tesla Breaks Production Records,"500,000",CARDINAL,Numerals that do not fall under another type,147,154
+3,Business,Tesla Breaks Production Records,Austin,GPE,"Countries, cities, states",186,192
+3,Business,Tesla Breaks Production Records,Texas,GPE,"Countries, cities, states",194,199
+3,Business,Tesla Breaks Production Records,$1 trillion,MONEY,"Monetary values, including unit",269,280
+3,Business,Tesla Breaks Production Records,December,DATE,Absolute or relative dates or periods,284,292
+3,Business,Tesla Breaks Production Records,Chinese,NORP,Nationalities or religious or political groups,294,301
+3,Business,Tesla Breaks Production Records,BYD,ORG,"Companies, agencies, institutions, etc.",313,316
+4,Sports,Manchester United Signs Star Player,Manchester United,PERSON,"People, including fictional",0,17
+4,Sports,Manchester United Signs Star Player,Brazilian,NORP,Nationalities or religious or political groups,43,52
+4,Sports,Manchester United Signs Star Player,Lucas Silva,PERSON,"People, including fictional",64,75
+4,Sports,Manchester United Signs Star Player,£120 million,MONEY,"Monetary values, including unit",96,108
+4,Sports,Manchester United Signs Star Player,24-year-old,DATE,Absolute or relative dates or periods,114,125
+4,Sports,Manchester United Signs Star Player,Real Madrid,ORG,"Companies, agencies, institutions, etc.",155,166
+4,Sports,Manchester United Signs Star Player,the Champions League,ORG,"Companies, agencies, institutions, etc.",191,211
+4,Sports,Manchester United Signs Star Player,last season,DATE,Absolute or relative dates or periods,212,223
+4,Sports,Manchester United Signs Star Player,Erik,PERSON,"People, including fictional",233,237
+4,Sports,Manchester United Signs Star Player,ten,CARDINAL,Numerals that do not fall under another type,238,241
+4,Sports,Manchester United Signs Star Player,Silva,ORG,"Companies, agencies, institutions, etc.",273,278
+4,Sports,Manchester United Signs Star Player,January 2025,DATE,Absolute or relative dates or periods,300,312
+5,Health,WHO Approves New Malaria Vaccine,The World Health Organization,ORG,"Companies, agencies, institutions, etc.",0,29
+5,Health,WHO Approves New Malaria Vaccine,Monday,DATE,Absolute or relative dates or periods,85,91
+5,Health,WHO Approves New Malaria Vaccine,Tedros Adhanom Ghebreyesus,PERSON,"People, including fictional",97,123
+5,Health,WHO Approves New Malaria Vaccine,Oxford University,ORG,"Companies, agencies, institutions, etc.",205,222
+5,Health,WHO Approves New Malaria Vaccine,millions,CARDINAL,Numerals that do not fall under another type,246,254
+5,Health,WHO Approves New Malaria Vaccine,Africa,LOC,"Non-GPE locations, mountain ranges, bodies of water",267,273
+5,Health,WHO Approves New Malaria Vaccine,Kenya,GPE,"Countries, cities, states",294,299
+5,Health,WHO Approves New Malaria Vaccine,Ghana,GPE,"Countries, cities, states",301,306
+5,Health,WHO Approves New Malaria Vaccine,Malawi,PERSON,"People, including fictional",312,318
+5,Health,WHO Approves New Malaria Vaccine,85%,PERCENT,"Percentage, including ""%""",326,329
+6,Entertainment,Netflix Announces Record Subscriber Growth,Netflix,ORG,"Companies, agencies, institutions, etc.",0,7
+6,Entertainment,Netflix Announces Record Subscriber Growth,quarterly,DATE,Absolute or relative dates or periods,60,69
+6,Entertainment,Netflix Announces Record Subscriber Growth,15 million,CARDINAL,Numerals that do not fall under another type,111,121
+6,Entertainment,Netflix Announces Record Subscriber Growth,the third quarter,DATE,Absolute or relative dates or periods,141,158
+6,Entertainment,Netflix Announces Record Subscriber Growth,Ted Sarandos,PERSON,"People, including fictional",167,179
+6,Entertainment,Netflix Announces Record Subscriber Growth,$17 billion,MONEY,"Monetary values, including unit",206,217
+6,Entertainment,Netflix Announces Record Subscriber Growth,next year,DATE,Absolute or relative dates or periods,238,247
+6,Entertainment,Netflix Announces Record Subscriber Growth,Los Angeles,GPE,"Countries, cities, states",263,274
+6,Entertainment,Netflix Announces Record Subscriber Growth,"2,000",CARDINAL,Numerals that do not fall under another type,315,320
+7,Economy,Federal Reserve Adjusts Interest Rates,The Federal Reserve,ORG,"Companies, agencies, institutions, etc.",0,19
+7,Economy,Federal Reserve Adjusts Interest Rates,0.25%,PERCENT,"Percentage, including ""%""",32,37
+7,Economy,Federal Reserve Adjusts Interest Rates,Wednesday,DATE,Absolute or relative dates or periods,59,68
+7,Economy,Federal Reserve Adjusts Interest Rates,Fed,ORG,"Companies, agencies, institutions, etc.",70,73
+7,Economy,Federal Reserve Adjusts Interest Rates,Jerome Powell,PERSON,"People, including fictional",83,96
+7,Economy,Federal Reserve Adjusts Interest Rates,The New York Stock Exchange,ORG,"Companies, agencies, institutions, etc.",152,179
+7,Economy,Federal Reserve Adjusts Interest Rates,Dow Jones,ORG,"Companies, agencies, institutions, etc.",211,220
+7,Economy,Federal Reserve Adjusts Interest Rates,400,CARDINAL,Numerals that do not fall under another type,228,231
+7,Economy,Federal Reserve Adjusts Interest Rates,Treasury,ORG,"Companies, agencies, institutions, etc.",240,248
+7,Economy,Federal Reserve Adjusts Interest Rates,Janet Yellen,PERSON,"People, including fictional",259,271
+7,Economy,Federal Reserve Adjusts Interest Rates,American,NORP,Nationalities or religious or political groups,300,308
+8,Science,NASA Discovers Earth-Like Exoplanet,NASA,ORG,"Companies, agencies, institutions, etc.",0,4
+8,Science,NASA Discovers Earth-Like Exoplanet,the Jet Propulsion Laboratory,ORG,"Companies, agencies, institutions, etc.",19,48
+8,Science,NASA Discovers Earth-Like Exoplanet,Pasadena,GPE,"Countries, cities, states",52,60
+8,Science,NASA Discovers Earth-Like Exoplanet,California,GPE,"Countries, cities, states",62,72
+8,Science,NASA Discovers Earth-Like Exoplanet,Earth,LOC,"Non-GPE locations, mountain ranges, bodies of water",104,109
+8,Science,NASA Discovers Earth-Like Exoplanet,"1,400",CARDINAL,Numerals that do not fall under another type,168,173
+8,Science,NASA Discovers Earth-Like Exoplanet,Sarah Martinez,PERSON,"People, including fictional",240,254
+8,Science,NASA Discovers Earth-Like Exoplanet,James Webb Space Telescope,PERSON,"People, including fictional",344,370

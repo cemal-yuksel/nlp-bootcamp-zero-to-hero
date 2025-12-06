@@ -1,0 +1,812 @@
+[
+  {
+    "news_id":1,
+    "category":"Technology",
+    "title":"Apple Unveils Revolutionary AI Chip",
+    "entity_text":"Apple Inc.",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":0,
+    "end_char":10
+  },
+  {
+    "news_id":1,
+    "category":"Technology",
+    "title":"Apple Unveils Revolutionary AI Chip",
+    "entity_text":"today",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":21,
+    "end_char":26
+  },
+  {
+    "news_id":1,
+    "category":"Technology",
+    "title":"Apple Unveils Revolutionary AI Chip",
+    "entity_text":"Cupertino",
+    "entity_type":"GPE",
+    "entity_type_desc":"Countries, cities, states",
+    "start_char":36,
+    "end_char":45
+  },
+  {
+    "news_id":1,
+    "category":"Technology",
+    "title":"Apple Unveils Revolutionary AI Chip",
+    "entity_text":"Tim Cook",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":133,
+    "end_char":141
+  },
+  {
+    "news_id":1,
+    "category":"Technology",
+    "title":"Apple Unveils Revolutionary AI Chip",
+    "entity_text":"M3",
+    "entity_type":"GPE",
+    "entity_type_desc":"Countries, cities, states",
+    "start_char":160,
+    "end_char":162
+  },
+  {
+    "news_id":1,
+    "category":"Technology",
+    "title":"Apple Unveils Revolutionary AI Chip",
+    "entity_text":"October 2024",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":189,
+    "end_char":201
+  },
+  {
+    "news_id":1,
+    "category":"Technology",
+    "title":"Apple Unveils Revolutionary AI Chip",
+    "entity_text":"over $10 billion",
+    "entity_type":"MONEY",
+    "entity_type_desc":"Monetary values, including unit",
+    "start_char":228,
+    "end_char":244
+  },
+  {
+    "news_id":1,
+    "category":"Technology",
+    "title":"Apple Unveils Revolutionary AI Chip",
+    "entity_text":"Microsoft",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":274,
+    "end_char":283
+  },
+  {
+    "news_id":1,
+    "category":"Technology",
+    "title":"Apple Unveils Revolutionary AI Chip",
+    "entity_text":"Google",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":288,
+    "end_char":294
+  },
+  {
+    "news_id":2,
+    "category":"Politics",
+    "title":"UN Summit Addresses Climate Change",
+    "entity_text":"The United Nations",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":0,
+    "end_char":18
+  },
+  {
+    "news_id":2,
+    "category":"Politics",
+    "title":"UN Summit Addresses Climate Change",
+    "entity_text":"Paris",
+    "entity_type":"GPE",
+    "entity_type_desc":"Countries, cities, states",
+    "start_char":54,
+    "end_char":59
+  },
+  {
+    "news_id":2,
+    "category":"Politics",
+    "title":"UN Summit Addresses Climate Change",
+    "entity_text":"last week",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":60,
+    "end_char":69
+  },
+  {
+    "news_id":2,
+    "category":"Politics",
+    "title":"UN Summit Addresses Climate Change",
+    "entity_text":"Emmanuel Macron",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":81,
+    "end_char":96
+  },
+  {
+    "news_id":2,
+    "category":"Politics",
+    "title":"UN Summit Addresses Climate Change",
+    "entity_text":"France",
+    "entity_type":"GPE",
+    "entity_type_desc":"Countries, cities, states",
+    "start_char":100,
+    "end_char":106
+  },
+  {
+    "news_id":2,
+    "category":"Politics",
+    "title":"UN Summit Addresses Climate Change",
+    "entity_text":"over 150",
+    "entity_type":"CARDINAL",
+    "entity_type_desc":"Numerals that do not fall under another type",
+    "start_char":129,
+    "end_char":137
+  },
+  {
+    "news_id":2,
+    "category":"Politics",
+    "title":"UN Summit Addresses Climate Change",
+    "entity_text":"The European Union",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":149,
+    "end_char":167
+  },
+  {
+    "news_id":2,
+    "category":"Politics",
+    "title":"UN Summit Addresses Climate Change",
+    "entity_text":"€500 million",
+    "entity_type":"MONEY",
+    "entity_type_desc":"Monetary values, including unit",
+    "start_char":176,
+    "end_char":188
+  },
+  {
+    "news_id":2,
+    "category":"Politics",
+    "title":"UN Summit Addresses Climate Change",
+    "entity_text":"British",
+    "entity_type":"NORP",
+    "entity_type_desc":"Nationalities or religious or political groups",
+    "start_char":220,
+    "end_char":227
+  },
+  {
+    "news_id":2,
+    "category":"Politics",
+    "title":"UN Summit Addresses Climate Change",
+    "entity_text":"Rishi Sunak",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":243,
+    "end_char":254
+  },
+  {
+    "news_id":2,
+    "category":"Politics",
+    "title":"UN Summit Addresses Climate Change",
+    "entity_text":"German",
+    "entity_type":"NORP",
+    "entity_type_desc":"Nationalities or religious or political groups",
+    "start_char":259,
+    "end_char":265
+  },
+  {
+    "news_id":2,
+    "category":"Politics",
+    "title":"UN Summit Addresses Climate Change",
+    "entity_text":"Olaf Scholz",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":277,
+    "end_char":288
+  },
+  {
+    "news_id":3,
+    "category":"Business",
+    "title":"Tesla Breaks Production Records",
+    "entity_text":"Tesla Motors",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":0,
+    "end_char":12
+  },
+  {
+    "news_id":3,
+    "category":"Business",
+    "title":"Tesla Breaks Production Records",
+    "entity_text":"the third quarter of 2024",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":58,
+    "end_char":83
+  },
+  {
+    "news_id":3,
+    "category":"Business",
+    "title":"Tesla Breaks Production Records",
+    "entity_text":"Elon Musk",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":127,
+    "end_char":136
+  },
+  {
+    "news_id":3,
+    "category":"Business",
+    "title":"Tesla Breaks Production Records",
+    "entity_text":"500,000",
+    "entity_type":"CARDINAL",
+    "entity_type_desc":"Numerals that do not fall under another type",
+    "start_char":147,
+    "end_char":154
+  },
+  {
+    "news_id":3,
+    "category":"Business",
+    "title":"Tesla Breaks Production Records",
+    "entity_text":"Austin",
+    "entity_type":"GPE",
+    "entity_type_desc":"Countries, cities, states",
+    "start_char":186,
+    "end_char":192
+  },
+  {
+    "news_id":3,
+    "category":"Business",
+    "title":"Tesla Breaks Production Records",
+    "entity_text":"Texas",
+    "entity_type":"GPE",
+    "entity_type_desc":"Countries, cities, states",
+    "start_char":194,
+    "end_char":199
+  },
+  {
+    "news_id":3,
+    "category":"Business",
+    "title":"Tesla Breaks Production Records",
+    "entity_text":"$1 trillion",
+    "entity_type":"MONEY",
+    "entity_type_desc":"Monetary values, including unit",
+    "start_char":269,
+    "end_char":280
+  },
+  {
+    "news_id":3,
+    "category":"Business",
+    "title":"Tesla Breaks Production Records",
+    "entity_text":"December",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":284,
+    "end_char":292
+  },
+  {
+    "news_id":3,
+    "category":"Business",
+    "title":"Tesla Breaks Production Records",
+    "entity_text":"Chinese",
+    "entity_type":"NORP",
+    "entity_type_desc":"Nationalities or religious or political groups",
+    "start_char":294,
+    "end_char":301
+  },
+  {
+    "news_id":3,
+    "category":"Business",
+    "title":"Tesla Breaks Production Records",
+    "entity_text":"BYD",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":313,
+    "end_char":316
+  },
+  {
+    "news_id":4,
+    "category":"Sports",
+    "title":"Manchester United Signs Star Player",
+    "entity_text":"Manchester United",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":0,
+    "end_char":17
+  },
+  {
+    "news_id":4,
+    "category":"Sports",
+    "title":"Manchester United Signs Star Player",
+    "entity_text":"Brazilian",
+    "entity_type":"NORP",
+    "entity_type_desc":"Nationalities or religious or political groups",
+    "start_char":43,
+    "end_char":52
+  },
+  {
+    "news_id":4,
+    "category":"Sports",
+    "title":"Manchester United Signs Star Player",
+    "entity_text":"Lucas Silva",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":64,
+    "end_char":75
+  },
+  {
+    "news_id":4,
+    "category":"Sports",
+    "title":"Manchester United Signs Star Player",
+    "entity_text":"£120 million",
+    "entity_type":"MONEY",
+    "entity_type_desc":"Monetary values, including unit",
+    "start_char":96,
+    "end_char":108
+  },
+  {
+    "news_id":4,
+    "category":"Sports",
+    "title":"Manchester United Signs Star Player",
+    "entity_text":"24-year-old",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":114,
+    "end_char":125
+  },
+  {
+    "news_id":4,
+    "category":"Sports",
+    "title":"Manchester United Signs Star Player",
+    "entity_text":"Real Madrid",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":155,
+    "end_char":166
+  },
+  {
+    "news_id":4,
+    "category":"Sports",
+    "title":"Manchester United Signs Star Player",
+    "entity_text":"the Champions League",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":191,
+    "end_char":211
+  },
+  {
+    "news_id":4,
+    "category":"Sports",
+    "title":"Manchester United Signs Star Player",
+    "entity_text":"last season",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":212,
+    "end_char":223
+  },
+  {
+    "news_id":4,
+    "category":"Sports",
+    "title":"Manchester United Signs Star Player",
+    "entity_text":"Erik",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":233,
+    "end_char":237
+  },
+  {
+    "news_id":4,
+    "category":"Sports",
+    "title":"Manchester United Signs Star Player",
+    "entity_text":"ten",
+    "entity_type":"CARDINAL",
+    "entity_type_desc":"Numerals that do not fall under another type",
+    "start_char":238,
+    "end_char":241
+  },
+  {
+    "news_id":4,
+    "category":"Sports",
+    "title":"Manchester United Signs Star Player",
+    "entity_text":"Silva",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":273,
+    "end_char":278
+  },
+  {
+    "news_id":4,
+    "category":"Sports",
+    "title":"Manchester United Signs Star Player",
+    "entity_text":"January 2025",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":300,
+    "end_char":312
+  },
+  {
+    "news_id":5,
+    "category":"Health",
+    "title":"WHO Approves New Malaria Vaccine",
+    "entity_text":"The World Health Organization",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":0,
+    "end_char":29
+  },
+  {
+    "news_id":5,
+    "category":"Health",
+    "title":"WHO Approves New Malaria Vaccine",
+    "entity_text":"Monday",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":85,
+    "end_char":91
+  },
+  {
+    "news_id":5,
+    "category":"Health",
+    "title":"WHO Approves New Malaria Vaccine",
+    "entity_text":"Tedros Adhanom Ghebreyesus",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":97,
+    "end_char":123
+  },
+  {
+    "news_id":5,
+    "category":"Health",
+    "title":"WHO Approves New Malaria Vaccine",
+    "entity_text":"Oxford University",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":205,
+    "end_char":222
+  },
+  {
+    "news_id":5,
+    "category":"Health",
+    "title":"WHO Approves New Malaria Vaccine",
+    "entity_text":"millions",
+    "entity_type":"CARDINAL",
+    "entity_type_desc":"Numerals that do not fall under another type",
+    "start_char":246,
+    "end_char":254
+  },
+  {
+    "news_id":5,
+    "category":"Health",
+    "title":"WHO Approves New Malaria Vaccine",
+    "entity_text":"Africa",
+    "entity_type":"LOC",
+    "entity_type_desc":"Non-GPE locations, mountain ranges, bodies of water",
+    "start_char":267,
+    "end_char":273
+  },
+  {
+    "news_id":5,
+    "category":"Health",
+    "title":"WHO Approves New Malaria Vaccine",
+    "entity_text":"Kenya",
+    "entity_type":"GPE",
+    "entity_type_desc":"Countries, cities, states",
+    "start_char":294,
+    "end_char":299
+  },
+  {
+    "news_id":5,
+    "category":"Health",
+    "title":"WHO Approves New Malaria Vaccine",
+    "entity_text":"Ghana",
+    "entity_type":"GPE",
+    "entity_type_desc":"Countries, cities, states",
+    "start_char":301,
+    "end_char":306
+  },
+  {
+    "news_id":5,
+    "category":"Health",
+    "title":"WHO Approves New Malaria Vaccine",
+    "entity_text":"Malawi",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":312,
+    "end_char":318
+  },
+  {
+    "news_id":5,
+    "category":"Health",
+    "title":"WHO Approves New Malaria Vaccine",
+    "entity_text":"85%",
+    "entity_type":"PERCENT",
+    "entity_type_desc":"Percentage, including \"%\"",
+    "start_char":326,
+    "end_char":329
+  },
+  {
+    "news_id":6,
+    "category":"Entertainment",
+    "title":"Netflix Announces Record Subscriber Growth",
+    "entity_text":"Netflix",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":0,
+    "end_char":7
+  },
+  {
+    "news_id":6,
+    "category":"Entertainment",
+    "title":"Netflix Announces Record Subscriber Growth",
+    "entity_text":"quarterly",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":60,
+    "end_char":69
+  },
+  {
+    "news_id":6,
+    "category":"Entertainment",
+    "title":"Netflix Announces Record Subscriber Growth",
+    "entity_text":"15 million",
+    "entity_type":"CARDINAL",
+    "entity_type_desc":"Numerals that do not fall under another type",
+    "start_char":111,
+    "end_char":121
+  },
+  {
+    "news_id":6,
+    "category":"Entertainment",
+    "title":"Netflix Announces Record Subscriber Growth",
+    "entity_text":"the third quarter",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":141,
+    "end_char":158
+  },
+  {
+    "news_id":6,
+    "category":"Entertainment",
+    "title":"Netflix Announces Record Subscriber Growth",
+    "entity_text":"Ted Sarandos",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":167,
+    "end_char":179
+  },
+  {
+    "news_id":6,
+    "category":"Entertainment",
+    "title":"Netflix Announces Record Subscriber Growth",
+    "entity_text":"$17 billion",
+    "entity_type":"MONEY",
+    "entity_type_desc":"Monetary values, including unit",
+    "start_char":206,
+    "end_char":217
+  },
+  {
+    "news_id":6,
+    "category":"Entertainment",
+    "title":"Netflix Announces Record Subscriber Growth",
+    "entity_text":"next year",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":238,
+    "end_char":247
+  },
+  {
+    "news_id":6,
+    "category":"Entertainment",
+    "title":"Netflix Announces Record Subscriber Growth",
+    "entity_text":"Los Angeles",
+    "entity_type":"GPE",
+    "entity_type_desc":"Countries, cities, states",
+    "start_char":263,
+    "end_char":274
+  },
+  {
+    "news_id":6,
+    "category":"Entertainment",
+    "title":"Netflix Announces Record Subscriber Growth",
+    "entity_text":"2,000",
+    "entity_type":"CARDINAL",
+    "entity_type_desc":"Numerals that do not fall under another type",
+    "start_char":315,
+    "end_char":320
+  },
+  {
+    "news_id":7,
+    "category":"Economy",
+    "title":"Federal Reserve Adjusts Interest Rates",
+    "entity_text":"The Federal Reserve",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":0,
+    "end_char":19
+  },
+  {
+    "news_id":7,
+    "category":"Economy",
+    "title":"Federal Reserve Adjusts Interest Rates",
+    "entity_text":"0.25%",
+    "entity_type":"PERCENT",
+    "entity_type_desc":"Percentage, including \"%\"",
+    "start_char":32,
+    "end_char":37
+  },
+  {
+    "news_id":7,
+    "category":"Economy",
+    "title":"Federal Reserve Adjusts Interest Rates",
+    "entity_text":"Wednesday",
+    "entity_type":"DATE",
+    "entity_type_desc":"Absolute or relative dates or periods",
+    "start_char":59,
+    "end_char":68
+  },
+  {
+    "news_id":7,
+    "category":"Economy",
+    "title":"Federal Reserve Adjusts Interest Rates",
+    "entity_text":"Fed",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":70,
+    "end_char":73
+  },
+  {
+    "news_id":7,
+    "category":"Economy",
+    "title":"Federal Reserve Adjusts Interest Rates",
+    "entity_text":"Jerome Powell",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":83,
+    "end_char":96
+  },
+  {
+    "news_id":7,
+    "category":"Economy",
+    "title":"Federal Reserve Adjusts Interest Rates",
+    "entity_text":"The New York Stock Exchange",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":152,
+    "end_char":179
+  },
+  {
+    "news_id":7,
+    "category":"Economy",
+    "title":"Federal Reserve Adjusts Interest Rates",
+    "entity_text":"Dow Jones",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":211,
+    "end_char":220
+  },
+  {
+    "news_id":7,
+    "category":"Economy",
+    "title":"Federal Reserve Adjusts Interest Rates",
+    "entity_text":"400",
+    "entity_type":"CARDINAL",
+    "entity_type_desc":"Numerals that do not fall under another type",
+    "start_char":228,
+    "end_char":231
+  },
+  {
+    "news_id":7,
+    "category":"Economy",
+    "title":"Federal Reserve Adjusts Interest Rates",
+    "entity_text":"Treasury",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":240,
+    "end_char":248
+  },
+  {
+    "news_id":7,
+    "category":"Economy",
+    "title":"Federal Reserve Adjusts Interest Rates",
+    "entity_text":"Janet Yellen",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":259,
+    "end_char":271
+  },
+  {
+    "news_id":7,
+    "category":"Economy",
+    "title":"Federal Reserve Adjusts Interest Rates",
+    "entity_text":"American",
+    "entity_type":"NORP",
+    "entity_type_desc":"Nationalities or religious or political groups",
+    "start_char":300,
+    "end_char":308
+  },
+  {
+    "news_id":8,
+    "category":"Science",
+    "title":"NASA Discovers Earth-Like Exoplanet",
+    "entity_text":"NASA",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":0,
+    "end_char":4
+  },
+  {
+    "news_id":8,
+    "category":"Science",
+    "title":"NASA Discovers Earth-Like Exoplanet",
+    "entity_text":"the Jet Propulsion Laboratory",
+    "entity_type":"ORG",
+    "entity_type_desc":"Companies, agencies, institutions, etc.",
+    "start_char":19,
+    "end_char":48
+  },
+  {
+    "news_id":8,
+    "category":"Science",
+    "title":"NASA Discovers Earth-Like Exoplanet",
+    "entity_text":"Pasadena",
+    "entity_type":"GPE",
+    "entity_type_desc":"Countries, cities, states",
+    "start_char":52,
+    "end_char":60
+  },
+  {
+    "news_id":8,
+    "category":"Science",
+    "title":"NASA Discovers Earth-Like Exoplanet",
+    "entity_text":"California",
+    "entity_type":"GPE",
+    "entity_type_desc":"Countries, cities, states",
+    "start_char":62,
+    "end_char":72
+  },
+  {
+    "news_id":8,
+    "category":"Science",
+    "title":"NASA Discovers Earth-Like Exoplanet",
+    "entity_text":"Earth",
+    "entity_type":"LOC",
+    "entity_type_desc":"Non-GPE locations, mountain ranges, bodies of water",
+    "start_char":104,
+    "end_char":109
+  },
+  {
+    "news_id":8,
+    "category":"Science",
+    "title":"NASA Discovers Earth-Like Exoplanet",
+    "entity_text":"1,400",
+    "entity_type":"CARDINAL",
+    "entity_type_desc":"Numerals that do not fall under another type",
+    "start_char":168,
+    "end_char":173
+  },
+  {
+    "news_id":8,
+    "category":"Science",
+    "title":"NASA Discovers Earth-Like Exoplanet",
+    "entity_text":"Sarah Martinez",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":240,
+    "end_char":254
+  },
+  {
+    "news_id":8,
+    "category":"Science",
+    "title":"NASA Discovers Earth-Like Exoplanet",
+    "entity_text":"James Webb Space Telescope",
+    "entity_type":"PERSON",
+    "entity_type_desc":"People, including fictional",
+    "start_char":344,
+    "end_char":370
+  }
+]
