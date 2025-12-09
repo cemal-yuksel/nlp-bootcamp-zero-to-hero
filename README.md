@@ -80,9 +80,9 @@ flowchart TB
     B1([1. Hafta ✅<br><b>Metin Ön İşleme</b><br><i>Temizleme, Tokenizasyon</i>])
     B2([2. Hafta ✅<br><b>Metin Temsili</b><br><i>BoW, TF-IDF, Embedding</i>])
     B3([3. Hafta ✅<br><b>Olasılıksal Modeller</b><br><i>N-gram, HMM, MaxEnt</i>])
-    B4([4. Hafta 🔄<br><b>Derin Öğrenme</b><br><i>RNN, LSTM, Transformer</i>])
-    B5([5. Hafta 🔄<br><b>Temel NLP Görevleri</b><br><i>Duygu Analizi, NER</i>])
-    B6([6. Hafta 🔄<br><b>Gelişmiş NLP</b><br><i>Chatbot, QA, Özetleme</i>])
+    B4([4. Hafta ✅<br><b>Derin Öğrenme</b><br><i>RNN, LSTM, GPT/LLaMA</i>])
+    B5([5. Hafta ✅<br><b>Temel NLP Görevleri</b><br><i>Duygu Analizi, NER, WSD</i>])
+    B6([6. Hafta 🔄<br><b>Gelişmiş NLP</b><br><i>Chatbot, QA, Production</i>])
     Z1([Gerçek Dünya Uygulamaları])
 
     %% Grid bağlantıları
@@ -143,28 +143,28 @@ flowchart TB
 </tr>
 <tr>
 <td align="center"><b>4</b></td>
-<td><b>🧠 04.derin-ogrenme</b><br/><i>Derin Öğrenme & NLP</i></td>
-<td>• Recurrent Neural Networks (RNN)<br/>• LSTM & GRU modelleri<br/>• Transformer mimarisi<br/>• BERT ve GPT modelleri</td>
-<td><i>4. hafta içeriği...</i></td>
-<td align="center">⏳ <b>Bekliyor</b></td>
+<td><b>🧠 04.derin-ogrenme-dil-modelleri</b><br/><i>Derin Öğrenme Dil Modelleri</i></td>
+<td>• Recurrent Neural Networks (RNN)<br/>• LSTM & GRU ile metin üretimi<br/>• Transformer mimarisi temelleri<br/>• GPT ve LLaMA ile metin üretimi<br/>• Duygu analizi ile RNN uygulaması</td>
+<td>• recurrent_neural_network.py<br/>• lstm.py<br/>• gpt_llama.py<br/>• GPT_LLaMA_Metin_Uretimi_Kapsamli_Egitim.ipynb</td>
+<td align="center">✅ <b>Tamamlandı</b></td>
 </tr>
 <tr>
 <td align="center"><b>5</b></td>
 <td><b>🎯 05.temel-nlp-gorevleri</b><br/><i>Temel NLP Görevleri</i></td>
-<td>• Duygu analizi (Sentiment Analysis)<br/>• Metin sınıflandırma<br/>• Named Entity Recognition (NER)<br/>• Part-of-Speech (POS) etiketleme</td>
-<td><i>5. hafta içeriği...</i></td>
-<td align="center">⏳ <b>Bekliyor</b></td>
+<td>• Duygu analizi (Sentiment Analysis)<br/>• Kelime anlam belirsizliği (WSD)<br/>• Named Entity Recognition (NER)<br/>• Metin sınıflandırma<br/>• Amazon yorumları ve spam tespiti</td>
+<td>• 01_duygu_analizi.ipynb<br/>• 02_kelime_anlami_belirsizligi_wsd.ipynb<br/>• 03_named_entity_recognition_complete.ipynb<br/>• 04_metin_siniflandirma_from_zero_to_hero.ipynb</td>
+<td align="center">✅ <b>Tamamlandı</b></td>
 </tr>
 <tr>
 <td align="center"><b>6</b></td>
-<td><b>🚀 06.gelismis-nlp</b><br/><i>Gelişmiş NLP Uygulamaları</i></td>
-<td>• Chatbot geliştirme<br/>• Soru-Cevap sistemleri<br/>• Otomatik özetleme<br/>• Makine çevirisi<br/>• Son teknoloji modeller</td>
-<td><i>6. hafta içeriği...</i></td>
-<td align="center">⏳ <b>Bekliyor</b></td>
+<td><b>🚀 06.gelismis-nlp-gorevleri</b><br/><i>Gelişmiş NLP Uygulamaları</i></td>
+<td>• Chatbot geliştirme (Zero to Hero)<br/>• Soru-Cevap sistemleri<br/>• Veritabanı entegrasyonu<br/>• Loglandırma ve monitoring<br/>• Production-ready chatbot</td>
+<td>• 01.chatbot/chatbot_zero_to_hero.ipynb<br/>• SQLite veritabanı entegrasyonu<br/>• Log sistemi<br/><i>(Devam ediyor...)</i></td>
+<td align="center">🔄 <b>Aktif</b></td>
 </tr>
 </table>
 
-> **🔥 Güncel Durum:** İlk 3 hafta tamamlandı! 01. Metin Ön İşleme, 02. Metin Temsili ve 03. Olasılıksal Dil Modelleri modülleri aktif. Her hafta yeni modüller ve interaktif içerikler ekleniyor. Takipte kal!
+> **🔥 Güncel Durum:** İlk 5 hafta tamamlandı! 01. Metin Ön İşleme, 02. Metin Temsili, 03. Olasılıksal Dil Modelleri, 04. Derin Öğrenme Dil Modelleri ve 05. Temel NLP Görevleri modülleri aktif. 6. hafta üzerinde çalışılıyor. Takipte kal!
 
 ---
 
@@ -173,13 +173,15 @@ flowchart TB
 - **🐍 Python:** Ana programlama dili
 - **📊 spaCy:** Modern NLP işlemleri
 - **📚 NLTK:** Geleneksel NLP araçları  
-- **🤗 Transformers:** Modern dil modelleri (BERT, GPT)
+- **🤗 Transformers:** Modern dil modelleri (BERT, GPT, LLaMA)
 - **🧮 Gensim:** Word2Vec ve topic modeling
 - **🔧 pandas:** Veri manipülasyonu
 - **📈 matplotlib/seaborn:** Veri görselleştirme
 - **🌍 langdetect:** Dil tespiti
 - **🧠 scikit-learn:** Makine öğrenmesi algoritmaları
 - **🔢 numpy:** Sayısal hesaplamalar
+- **🤖 TensorFlow/Keras:** Derin öğrenme modelleri (RNN, LSTM)
+- **💬 VADER:** Duygu analizi için kural tabanlı model
 
 ---
 
@@ -222,13 +224,37 @@ nlp-bootcamp-zero-to-hero/
 │   │   └── sentiment_analysis_metadata_20251026_234923.json
 │   └── 📖 README.md                            # Modül açıklaması
 │
-├── 📁 04.derin-ogrenme/                      # 4️⃣ HAFTA: Gelecek hafta...
-│   └── 🔄 (Hazırlanıyor...)
+├── 📁 04.derin-ogrenme-dil-modelleri/        # 4️⃣ HAFTA: Derin Öğrenme (Tamamlandı ✅)
+│   ├── 📓 GPT_LLaMA_Metin_Uretimi_Kapsamli_Egitim.ipynb  # GPT ve LLaMA ile metin üretimi
+│   ├── 🐍 recurrent_neural_network.py         # RNN ile duygu analizi
+│   ├── 🐍 lstm.py                            # LSTM ile metin üretimi
+│   ├── 🐍 gpt_llama.py                       # GPT-2 ve LLaMA model implementasyonu
+│   └── 📖 README.md                          # Modül açıklaması (hazırlanıyor)
 │
-├── 📁 05.temel-nlp-gorevleri/                # 5️⃣ HAFTA: Gelecek hafta...
-│   └── 🔄 (Hazırlanıyor...)
+├── 📁 05.temel-nlp-gorevleri/                # 5️⃣ HAFTA: Temel NLP Görevleri (Tamamlandı ✅)
+│   ├── 📓 01_duygu_analizi.ipynb             # VADER ile duygu analizi
+│   ├── 📓 02_kelime_anlami_belirsizligi_wsd.ipynb  # Word Sense Disambiguation
+│   ├── 📓 03_named_entity_recognition_complete.ipynb  # NER uygulaması
+│   ├── 📓 04_metin_siniflandirma_from_zero_to_hero.ipynb  # Metin sınıflandırma
+│   ├── 📊 duygu_analizi_amazon_veri_seti.csv  # Amazon ürün yorumları
+│   ├── 📊 metin_siniflandirma_spam_veri_seti.csv  # Spam tespit veri seti
+│   ├── 📊 ner_results.csv                    # NER analiz sonuçları
+│   ├── 📊 ner_results.json                   # NER JSON formatı
+│   ├── 📊 ner_summary_stats.json             # NER özet istatistikleri
+│   ├── 📄 ner_analysis_report.html           # NER HTML raporu
+│   ├── 📄 ner_analysis_report.json           # NER JSON raporu
+│   ├── 📊 ner_analysis_report.xlsx           # NER Excel raporu
+│   └── 📖 README.md                          # Modül açıklaması (hazırlanıyor)
 │
-├── 📁 06.gelismis-nlp/                       # 6️⃣ HAFTA: Gelecek hafta...
+├── 📁 06.gelismis-nlp-gorevleri/             # 6️⃣ HAFTA: Gelişmiş NLP (Devam Ediyor 🔄)
+│   └── 📁 01.chatbot/                        # Chatbot geliştirme
+│       ├── 📓 chatbot_zero_to_hero.ipynb     # Sıfırdan chatbot geliştirme
+│       ├── 🗄️ chatbot_demo.db                # Demo veritabanı
+│       ├── 🗄️ production_chatbot.db          # Production veritabanı
+│       ├── 🗄️ production_demo.db             # Production demo veritabanı
+│       ├── 📝 .env                           # Environment değişkenleri
+│       ├── 📝 .gitignore                     # Git ignore dosyası
+│       └── 📁 logs/                          # Chatbot log kayıtları
 │   └── 🔄 (Hazırlanıyor...)
 │
 ├── 📋 requirements.txt                        # Python kütüphaneleri
@@ -240,10 +266,11 @@ nlp-bootcamp-zero-to-hero/
 
 | Kategori | Adet | Açıklama |
 |:---|:-:|:---|
-| 📓 **Jupyter Notebook'lar** | 16 | İnteraktif eğitim materyalleri |
-| 📊 **Veri Setleri** | 4 | Gerçek dünya veri setleri |
-| 📁 **Tamamlanan Modüller** | 3 | Aktif eğitim modülleri |
-| 🔄 **Gelecek Modüller** | 3 | Hazırlanmakta olan içerikler |
+| 📓 **Jupyter Notebook'lar** | 21+ | İnteraktif eğitim materyalleri |
+| 🐍 **Python Dosyaları** | 3 | RNN, LSTM, GPT/LLaMA implementasyonları |
+| 📊 **Veri Setleri** | 8+ | Gerçek dünya veri setleri |
+| 📁 **Tamamlanan Modüller** | 5 | Aktif eğitim modülleri |
+| 🔄 **Devam Eden Modüller** | 1 | Geliştirilmekte olan içerikler |
 
 ---
 
@@ -285,6 +312,20 @@ nlp-bootcamp-zero-to-hero/
 <td align="center"><b>10K+</b><br/>Döküman</td>
 <td>• Haber sınıflandırma<br/>• POS tagging<br/>• Dil modelleme</td>
 <td align="center"><b>03</b><br/>Hafta</td>
+<td align="center">✅ <b>Aktif</b></td>
+</tr>
+<tr style="background-color:#f0f8ff;">
+<td><b>📊 Amazon Ürün Yorumları</b><br/><i>Duygu analizi veri seti</i></td>
+<td align="center"><b>1K+</b><br/>Yorum</td>
+<td>• Duygu analizi<br/>• VADER algoritması<br/>• Sentiment scoring</td>
+<td align="center"><b>05</b><br/>Hafta</td>
+<td align="center">✅ <b>Aktif</b></td>
+</tr>
+<tr style="background-color:#f5f5f5;">
+<td><b>📱 Spam Detection Dataset</b><br/><i>Metin sınıflandırma veri seti</i></td>
+<td align="center"><b>5K+</b><br/>Mesaj</td>
+<td>• Metin sınıflandırma<br/>• Spam tespiti<br/>• Binary classification</td>
+<td align="center"><b>05</b><br/>Hafta</td>
 <td align="center">✅ <b>Aktif</b></td>
 </tr>
 </table>
